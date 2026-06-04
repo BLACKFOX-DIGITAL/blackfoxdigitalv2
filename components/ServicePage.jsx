@@ -55,6 +55,28 @@ export function ServicePage({ serviceId }) {
         </div>
       </div>
 
+      {/* definition intro — crawlable, server-rendered */}
+      {svc.intro && (
+        <section className="sec" style={{ paddingTop: "clamp(40px,5vw,64px)", paddingBottom: 0 }}>
+          <div className="shell">
+            <div style={{ maxWidth: "72ch" }}>
+              <h2 className="display" style={{ fontSize: "clamp(24px,3vw,38px)", margin: "0 0 16px" }}>
+                What is {svc.short.toLowerCase()}?
+              </h2>
+              <p style={{ lineHeight: 1.65, marginBottom: 20 }}>{svc.intro.definition}</p>
+              {svc.intro.whyItMatters && (
+                <>
+                  <h3 style={{ fontSize: "clamp(18px,2vw,24px)", margin: "0 0 10px", fontWeight: 600 }}>
+                    Why does it matter for e-commerce?
+                  </h3>
+                  <p style={{ lineHeight: 1.65 }}>{svc.intro.whyItMatters}</p>
+                </>
+              )}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* body: sidebar + features */}
       <section className="sec" style={{ paddingTop: "clamp(40px,5vw,64px)" }}>
         <div className="shell svc-body">
@@ -114,7 +136,7 @@ export function ServicePage({ serviceId }) {
                 <div className="svc-faq">
                   {svc.faq.map((f, i) => (
                     <div className="svc-faq-item" key={i}>
-                      <div className="svc-faq-q">{f.q}</div>
+                      <h3 className="svc-faq-q">{f.q}</h3>
                       <div className="svc-faq-a">{f.a}</div>
                     </div>
                   ))}
