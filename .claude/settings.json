@@ -87,7 +87,9 @@
       "Bash(sed -n '243,260p' /Users/shakkhor666/Antigravity/blackfoxdigitalv2/components/Home.jsx)",
       "Bash(npx next *)",
       "Bash(git -C /Users/shakkhor666/Antigravity/blackfoxdigitalv2 log --oneline --all -- components/ServicePage.jsx)",
-      "Bash(git -C /Users/shakkhor666/Antigravity/blackfoxdigitalv2 log --oneline -12)"
+      "Bash(git -C /Users/shakkhor666/Antigravity/blackfoxdigitalv2 log --oneline -12)",
+      "Bash(git -C /Users/shakkhor666/Antigravity/blackfoxdigitalv2 add -A)",
+      "Bash(git -C /Users/shakkhor666/Antigravity/blackfoxdigitalv2 commit -m \"chore: remove one-off scripts, extracted data, and superseded SEO docs\")"
     ],
     "additionalDirectories": [
       "/private/tmp"
