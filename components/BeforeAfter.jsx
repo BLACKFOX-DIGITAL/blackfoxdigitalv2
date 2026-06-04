@@ -58,7 +58,7 @@ export function BeforeAfter({ before, after, ratio = "16 / 10", start = 0.5,
     return () => {
       window.removeEventListener("mousemove", mv);
       window.removeEventListener("mouseup",   up);
-      window.removeEventListener("touchmove", mv);
+      window.removeEventListener("touchmove", mv, { passive: true });
       window.removeEventListener("touchend",  up);
     };
   }, [drag, move]);

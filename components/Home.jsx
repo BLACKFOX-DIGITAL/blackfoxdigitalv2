@@ -40,14 +40,14 @@ export function Home() {
     el.addEventListener("mouseenter", pause);
     el.addEventListener("touchstart", pause, { passive: true });
     
-    const resume = () => startAutoSlide();
+    const resume = () => { clearInterval(interval); startAutoSlide(); };
     el.addEventListener("mouseleave", resume);
     el.addEventListener("touchend", resume);
     
     return () => {
       clearInterval(interval);
       el.removeEventListener("mouseenter", pause);
-      el.removeEventListener("touchstart", pause);
+      el.removeEventListener("touchstart", pause, { passive: true });
       el.removeEventListener("mouseleave", resume);
       el.removeEventListener("touchend", resume);
     };
