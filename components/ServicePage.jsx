@@ -111,6 +111,42 @@ export function ServicePage({ serviceId }) {
               </div>
             )}
 
+            {/* pricing table */}
+            {svc.pricingTiers && svc.pricingTiers.length > 0 && (
+              <div style={{ marginTop: 56 }}>
+                <span className="eyebrow">Pricing</span>
+                <h2 className="display" style={{ fontSize: "clamp(30px,4vw,54px)", margin: "12px 0 28px" }}>
+                  How much does {svc.short.toLowerCase()} cost?
+                </h2>
+                <div style={{ overflowX: "auto" }}>
+                  <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "clamp(14px,1.5vw,16px)" }}>
+                    <thead>
+                      <tr style={{ borderBottom: "2px solid var(--line)" }}>
+                        <th style={{ textAlign: "left", padding: "10px 16px 10px 0", fontWeight: 600 }}>Tier</th>
+                        <th style={{ textAlign: "left", padding: "10px 16px", fontWeight: 600 }}>What&apos;s included</th>
+                        <th style={{ textAlign: "right", padding: "10px 0 10px 16px", fontWeight: 600 }}>Price</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {svc.pricingTiers.map((row) => (
+                        <tr key={row.tier} style={{ borderBottom: "1px solid var(--line)" }}>
+                          <td style={{ padding: "12px 16px 12px 0", fontWeight: 600, whiteSpace: "nowrap" }}>{row.tier}</td>
+                          <td style={{ padding: "12px 16px", opacity: 0.75 }}>{row.description}</td>
+                          <td style={{ padding: "12px 0 12px 16px", textAlign: "right", fontWeight: 600, whiteSpace: "nowrap" }}>{row.price}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+                <p style={{ marginTop: 12, opacity: 0.6, fontSize: "0.875em" }}>
+                  All prices per image. No setup fee. No minimum order.{" "}
+                  <button className="arrowlink" style={{ fontSize: "inherit" }} onClick={() => go("contact", { trial: true })}>
+                    Start with a free trial
+                  </button>
+                </p>
+              </div>
+            )}
+
             {/* process recap */}
             <div style={{ marginTop: 56 }}>
               <span className="eyebrow">The workflow</span>

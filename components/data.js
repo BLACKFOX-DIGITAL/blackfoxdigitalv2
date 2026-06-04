@@ -129,6 +129,12 @@ export const BF = {
         ["Human-edited", "No AI shortcuts — every file handled by a trained specialist."],
       ],
       whoFor: "E-commerce brands, Amazon and Shopify sellers, and product photographers who need consistent, marketplace-ready images at scale — from a single SKU to tens of thousands.",
+      pricingTiers: [
+        { tier: "Simple",  description: "Single product, solid background, minimal clipping",       price: "from €0.35" },
+        { tier: "Medium",  description: "Multiple products or props, moderate complexity",           price: "from €0.55" },
+        { tier: "Complex", description: "Composites, multiple crops, lifestyle scenes",             price: "from €0.85" },
+        { tier: "Bulk",    description: "500+ images/month — volume rate applied automatically",    price: "Contact us" },
+      ],
       faq: [
         { q: "What background colour do Amazon and eBay require?", a: "Amazon main images require a pure white background (RGB 255, 255, 255) filling at least 85% of the frame. eBay and Shopify also default to white. We deliver all files pre-set to your exact marketplace spec." },
         { q: "Can you match our existing catalog style across a new batch?", a: "Yes. Send us 3–5 reference images representing your current standard and we build a style guide for your account. Every new batch matches it automatically." },
@@ -152,6 +158,12 @@ export const BF = {
         ["Simple to complex", "Single paths for basic shapes up to multi-path for intricate products."],
       ],
       whoFor: "Product photographers, e-commerce businesses, catalogue studios, and print designers who need pixel-clean cut-outs — from simple geometric products to complex hair, fur, and jewellery.",
+      pricingTiers: [
+        { tier: "Simple",  description: "Basic shapes, solid objects, single path",           price: "from €0.25" },
+        { tier: "Medium",  description: "Multiple paths, moderate edge complexity",           price: "from €0.45" },
+        { tier: "Complex", description: "Hair, fur, jewellery, wire mesh, multi-path",        price: "from €0.75" },
+        { tier: "Bulk",    description: "500+ images/month — volume rate",                    price: "Contact us" },
+      ],
       faq: [
         { q: "What's the difference between a clipping path and background removal?", a: "A clipping path is a vector path hand-drawn around a subject using the pen tool, used for hard-edged objects. Background removal applies that path to produce a transparent or white-background output file. We use the correct technique for each subject automatically." },
         { q: "Can you handle complex subjects like chains, wire mesh, or jewellery settings?", a: "Yes. Complex multi-path subjects are priced at a higher tier but are handled with the same pen-tool technique. No subject is too intricate — send a sample and we'll quote it accurately." },
@@ -175,6 +187,12 @@ export const BF = {
         ["Digital ironing", "Packing creases removed and left/right symmetry corrected across the garment."],
       ],
       whoFor: "Fashion brands, apparel e-commerce retailers, clothing photographers, and studio owners who shoot garments and need the mannequin removed — from basic t-shirts to complex outerwear and multi-layer pieces.",
+      pricingTiers: [
+        { tier: "Basic",    description: "Simple garments — tees, tanks, basic tops",                price: "from €0.85" },
+        { tier: "Standard", description: "Shirts, dresses, trousers, basic outerwear",              price: "from €1.20" },
+        { tier: "Complex",  description: "Structured jackets, multi-layer, padded outerwear",       price: "from €1.80" },
+        { tier: "Bulk",     description: "500+ garments/month — volume rate",                       price: "Contact us" },
+      ],
       faq: [
         { q: "Do you need both exterior and interior shots of the garment?", a: "For a clean neck joint stitch we need the exterior and the interior (lining/collar) shots. For simple garments like lightweight t-shirts, we can sometimes work from a single exterior shot — send a sample and we'll advise." },
         { q: "Can you handle hoodies, structured jackets, and multi-layer garments?", a: "Yes. Hoodies, padded jackets and multi-layer pieces require additional compositing work, priced by complexity. They are a core part of our ghost mannequin service — nothing is too structured." },
@@ -198,6 +216,11 @@ export const BF = {
         ["Glass & translucency", "Smoke, glass and sheer fabric extracted with natural transparency."],
       ],
       whoFor: "Fashion and beauty photographers, composite artists, and brands that shoot subjects with hair, fur, translucent fabric, glass, or smoke — anything where a hard clipping path would destroy fine edge detail.",
+      pricingTiers: [
+        { tier: "Standard", description: "Hair, simple fur, semi-transparent fabric",   price: "from €0.75" },
+        { tier: "Complex",  description: "Dense fur, glass, smoke, multiple subjects",  price: "from €1.20" },
+        { tier: "Bulk",     description: "500+ images/month — volume rate",             price: "Contact us" },
+      ],
       faq: [
         { q: "When should I use masking instead of a clipping path?", a: "Use masking when the subject has hair, fur, fine feathers, smoke, glass, or translucent fabric — anything where a hard vector path would cut off fine detail. We assess each image and apply the correct technique automatically." },
         { q: "Can you mask subjects on complex or busy backgrounds?", a: "Yes, though detailed backgrounds (outdoor scenes, textured walls) take longer to mask cleanly. Send a sample image and we'll assess it and quote accurately before you commit." },
@@ -221,6 +244,12 @@ export const BF = {
         ["Mirror reflection", "Floor and surface reflections matched to the object's geometry."],
       ],
       whoFor: "Product photographers, e-commerce brands, and catalogue studios whose products look flat or disconnected after background removal — and need a realistic shadow or reflection added without a studio reshoot.",
+      pricingTiers: [
+        { tier: "Drop shadow",    description: "Standard soft drop shadow below subject",  price: "from €0.45" },
+        { tier: "Reflection",     description: "Mirror reflection on flat surface",         price: "from €0.55" },
+        { tier: "Natural shadow", description: "Cast or natural light shadow compositing", price: "from €0.75" },
+        { tier: "Bulk",           description: "500+ images/month — volume rate",          price: "Contact us" },
+      ],
       faq: [
         { q: "What types of shadow can you create?", a: "Natural shadows (cast from the original light source direction), drop shadows (floating effect under the product), floor shadows (graduated fade beneath the object), and mirror reflections. Each is delivered as a separate layer." },
         { q: "Can you match an existing shadow style across an entire product range?", a: "Yes. Send reference images with your preferred shadow treatment and we match the direction, softness, opacity, and spread consistently across your full catalog." },
@@ -244,6 +273,11 @@ export const BF = {
         ["Dodge & burn", "Light sculpted across facial structure for a controlled, editorial finish."],
       ],
       whoFor: "Beauty brands, cosmetics campaigns, fashion lookbooks, e-commerce model shots, and photographers who need skin to look natural and editorial — not over-processed or artificially smooth.",
+      pricingTiers: [
+        { tier: "Standard", description: "Colour correction, minor blemishes, basic enhancement",    price: "Contact us" },
+        { tier: "High-end", description: "Full editorial retouch, compositing, detailed skin work",  price: "Contact us" },
+        { tier: "Campaign", description: "Campaign-level work, multiple looks, delivery to spec",    price: "Contact us" },
+      ],
       faq: [
         { q: "Will the retouching look natural or over-edited?", a: "Natural. Frequency separation keeps the underlying skin texture intact while correcting tone and removing blemishes. The result is never 'smooth plastic' — it looks like the model in perfect light, not a filter." },
         { q: "Can you match a specific retouching style or reference images?", a: "Yes. Send three to five reference images that represent your current standard and we build a dedicated style guide for your account. Every image we deliver matches your reference set." },
@@ -267,6 +301,11 @@ export const BF = {
         ["Stray hair & detail", "Flyaways tamed, unwanted creases removed, consistency held across the shoot."],
       ],
       whoFor: "Fashion brands, campaign agencies, and photographers shooting lookbooks, e-commerce ranges, or editorial work who need full-frame consistency across an entire shoot — not just clean skin.",
+      pricingTiers: [
+        { tier: "Standard", description: "Colour correction, minor blemishes, basic enhancement",    price: "Contact us" },
+        { tier: "High-end", description: "Full editorial retouch, compositing, detailed skin work",  price: "Contact us" },
+        { tier: "Campaign", description: "Campaign-level work, multiple looks, delivery to spec",    price: "Contact us" },
+      ],
       faq: [
         { q: "How is model retouching different from beauty retouching?", a: "Model retouching is a full-frame correction — skin, hair, garment drape, background clean-up, and a colour grade matched to your campaign. Beauty retouching focuses on the face only. Both use frequency separation but model work covers the entire image." },
         { q: "Can you maintain consistency across 200 images from the same shoot?", a: "Yes. We build a style guide from your reference images and apply it identically across the full shoot. Skin tone, grade, and correction level are consistent from image one to image two hundred." },
@@ -290,6 +329,11 @@ export const BF = {
         ["Crisp finish", "Sharp, even result ready for print, e-commerce or marketplace upload."],
       ],
       whoFor: "Product brands, catalogue studios, print designers, and e-commerce operations that need products to look exactly as they do in real life — with dust, scratches, glare, and colour drift corrected to brand specification.",
+      pricingTiers: [
+        { tier: "Standard", description: "Colour correction, minor blemishes, basic enhancement",    price: "Contact us" },
+        { tier: "High-end", description: "Full editorial retouch, compositing, detailed skin work",  price: "Contact us" },
+        { tier: "Campaign", description: "Campaign-level work, multiple looks, delivery to spec",    price: "Contact us" },
+      ],
       faq: [
         { q: "What exactly is included in product retouching?", a: "Dust and scratch removal, colour accuracy correction to brand spec, removal of surface glare and reflections, label alignment, sharpening, and final output at your required dimensions and DPI. All corrections are applied consistently across the full catalog batch." },
         { q: "Can you match Pantone or RAL colour references?", a: "Yes. Provide a Pantone, RAL, HEX or physical swatch reference and we match output colour to your exact brand specification — critical for products where colour accuracy drives purchasing decisions." },
@@ -313,6 +357,11 @@ export const BF = {
         ["Colour accuracy", "Delivered to your exact colour profile — sapphires, rubies and emeralds reproduced true."],
       ],
       whoFor: "Jewelry brands, luxury retailers, fine jewelry photographers, and e-commerce operations where gemstone brilliance, metal accuracy, and microscopic surface detail directly affect perceived value and conversion.",
+      pricingTiers: [
+        { tier: "Standard", description: "Colour correction, minor blemishes, basic enhancement",    price: "Contact us" },
+        { tier: "High-end", description: "Full editorial retouch, compositing, detailed skin work",  price: "Contact us" },
+        { tier: "Campaign", description: "Campaign-level work, multiple looks, delivery to spec",    price: "Contact us" },
+      ],
       faq: [
         { q: "Why does jewelry retouching cost more than standard product retouching?", a: "A single ring can have 30–50 individual facets that each need dodge-and-burn treatment to restore natural brilliance. Metal gradients must be rebuilt from scratch on curved surfaces. The time and precision required are significantly higher than standard product work." },
         { q: "Can you enhance diamonds and gemstones to look more brilliant?", a: "Yes. We dodge-and-burn each facet individually to restore the natural sparkle lost under studio lighting. We don't add artificial glow — we restore the real optical behaviour of the stone as it appears in natural light." },
