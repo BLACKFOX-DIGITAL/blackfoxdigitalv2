@@ -106,6 +106,9 @@ export function Home() {
             <span className="eyebrow no-rule" style={{ justifyContent: "center", width: "100%", display: "flex" }}>Professional Photo Retouch Service</span>
             <h2 className="display band-title">At your fingertips</h2>
           </div>
+          <p className="reveal" style={{ maxWidth: "72ch", margin: "0 auto clamp(32px,4vw,52px)", textAlign: "center", lineHeight: 1.65, opacity: 0.8 }}>
+            BLACKFOX DIGITAL is a professional image post-production company founded in 2016, providing clipping path, ghost mannequin, image masking, beauty retouch, and e-commerce photo editing services to brands and photographers worldwide. With 80+ in-house designers in Dhaka, Bangladesh, we deliver hand-edited images — no AI shortcuts — with a standard 24–48 hour turnaround and free trial on every service.
+          </p>
           <div className="promise-grid reveal">
             {BF.promises.map((p) => (
               <div className="promise-card" key={p.k}>
