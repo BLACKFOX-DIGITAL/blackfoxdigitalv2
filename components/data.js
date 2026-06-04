@@ -357,12 +357,16 @@ export const BF = {
     {
       name: "Mohammed Raihan",
       role: "Co-founder & Head of Production",
+      email: "raihan@blackfoxdigital.com.bd",
+      linkedin: "https://www.linkedin.com/in/raihan90",
       schemaId: "https://blackfoxdigital.com.bd/#founder-raihan",
       bio: "Mohammed Raihan has led BLACKFOX DIGITAL's production since founding in 2016, building the 80+ specialist team.",
     },
     {
       name: "Tanvir Mahedi",
       role: "Co-founder & Client Relations",
+      email: "shakkhor@blackfoxdigital.com.bd",
+      linkedin: "https://www.linkedin.com/in/shakkhor666/",
       schemaId: "https://blackfoxdigital.com.bd/#founder-mahedi",
       bio: "Tanvir Mahedi oversees client relationships and quality assurance across all European accounts.",
     },

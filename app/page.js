@@ -41,6 +41,8 @@ const founderSchemas = [
     "@id": "https://blackfoxdigital.com.bd/#founder-raihan",
     name: "Mohammed Raihan",
     jobTitle: "Co-founder & Head of Production",
+    email: "raihan@blackfoxdigital.com.bd",
+    sameAs: ["https://www.linkedin.com/in/raihan90"],
     worksFor: { "@id": "https://blackfoxdigital.com.bd/#organization" },
   },
   {
@@ -49,6 +51,8 @@ const founderSchemas = [
     "@id": "https://blackfoxdigital.com.bd/#founder-mahedi",
     name: "Tanvir Mahedi",
     jobTitle: "Co-founder & Client Relations",
+    email: "shakkhor@blackfoxdigital.com.bd",
+    sameAs: ["https://www.linkedin.com/in/shakkhor666/"],
     worksFor: { "@id": "https://blackfoxdigital.com.bd/#organization" },
   },
 ];
