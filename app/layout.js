@@ -70,8 +70,8 @@ const orgSchema = {
     ],
   },
   founder: [
-    { "@type": "Person", "@id": "https://blackfoxdigital.com.bd/#founder-raihan", name: "Mohammed Raihan", email: "raihan@blackfoxdigital.com.bd", sameAs: "https://www.linkedin.com/in/raihan90" },
-    { "@type": "Person", "@id": "https://blackfoxdigital.com.bd/#founder-mahedi", name: "Tanvir Mahedi",    email: "shakkhor@blackfoxdigital.com.bd", sameAs: "https://www.linkedin.com/in/shakkhor666/" },
+    { "@type": "Person", "@id": "https://blackfoxdigital.com.bd/#founder-raihan", name: "Mohammed Raihan", email: "raihan@blackfoxdigital.com.bd", sameAs: ["https://www.linkedin.com/in/raihan90"] },
+    { "@type": "Person", "@id": "https://blackfoxdigital.com.bd/#founder-mahedi", name: "Tanvir Mahedi",    email: "shakkhor@blackfoxdigital.com.bd", sameAs: ["https://www.linkedin.com/in/shakkhor666/"] },
   ],
   sameAs: [
     "https://www.facebook.com/blackfoxdigital",
@@ -102,9 +102,6 @@ export const metadata = {
   openGraph: {
     siteName: "BLACKFOX DIGITAL",
     type: "website",
-  },
-  other: {
-    "article:modified_time": "2026-06-04",
   },
 };
 

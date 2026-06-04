@@ -274,9 +274,9 @@ export const BF = {
       ],
       whoFor: "Beauty brands, cosmetics campaigns, fashion lookbooks, e-commerce model shots, and photographers who need skin to look natural and editorial — not over-processed or artificially smooth.",
       pricingTiers: [
-        { tier: "Standard", description: "Colour correction, minor blemishes, basic enhancement",    price: "Contact us" },
-        { tier: "High-end", description: "Full editorial retouch, compositing, detailed skin work",  price: "Contact us" },
-        { tier: "Campaign", description: "Campaign-level work, multiple looks, delivery to spec",    price: "Contact us" },
+        { tier: "Standard", description: "Colour correction, minor blemishes, basic skin smoothing",              price: "Contact us" },
+        { tier: "High-end", description: "Full editorial retouch, compositing, detailed skin and hair work",      price: "Contact us" },
+        { tier: "Campaign", description: "Campaign-level retouching, multiple looks, delivery to spec",           price: "Contact us" },
       ],
       faq: [
         { q: "Will the retouching look natural or over-edited?", a: "Natural. Frequency separation keeps the underlying skin texture intact while correcting tone and removing blemishes. The result is never 'smooth plastic' — it looks like the model in perfect light, not a filter." },
@@ -302,9 +302,9 @@ export const BF = {
       ],
       whoFor: "Fashion brands, campaign agencies, and photographers shooting lookbooks, e-commerce ranges, or editorial work who need full-frame consistency across an entire shoot — not just clean skin.",
       pricingTiers: [
-        { tier: "Standard", description: "Colour correction, minor blemishes, basic enhancement",    price: "Contact us" },
-        { tier: "High-end", description: "Full editorial retouch, compositing, detailed skin work",  price: "Contact us" },
-        { tier: "Campaign", description: "Campaign-level work, multiple looks, delivery to spec",    price: "Contact us" },
+        { tier: "Standard", description: "Posture and wardrobe correction, background clean-up",                 price: "Contact us" },
+        { tier: "High-end", description: "Full model retouch — skin, hair, wardrobe, environment",               price: "Contact us" },
+        { tier: "Campaign", description: "Campaign-level editorial, multi-look delivery, art-direction notes",   price: "Contact us" },
       ],
       faq: [
         { q: "How is model retouching different from beauty retouching?", a: "Model retouching is a full-frame correction — skin, hair, garment drape, background clean-up, and a colour grade matched to your campaign. Beauty retouching focuses on the face only. Both use frequency separation but model work covers the entire image." },
@@ -330,9 +330,9 @@ export const BF = {
       ],
       whoFor: "Product brands, catalogue studios, print designers, and e-commerce operations that need products to look exactly as they do in real life — with dust, scratches, glare, and colour drift corrected to brand specification.",
       pricingTiers: [
-        { tier: "Standard", description: "Colour correction, minor blemishes, basic enhancement",    price: "Contact us" },
-        { tier: "High-end", description: "Full editorial retouch, compositing, detailed skin work",  price: "Contact us" },
-        { tier: "Campaign", description: "Campaign-level work, multiple looks, delivery to spec",    price: "Contact us" },
+        { tier: "Standard", description: "Dust, scratch removal, colour accuracy correction",                    price: "Contact us" },
+        { tier: "High-end", description: "Full surface retouch, reflection control, material enhancement",       price: "Contact us" },
+        { tier: "Campaign", description: "Campaign packshot quality — compositing, CGI integration, multi-angle", price: "Contact us" },
       ],
       faq: [
         { q: "What exactly is included in product retouching?", a: "Dust and scratch removal, colour accuracy correction to brand spec, removal of surface glare and reflections, label alignment, sharpening, and final output at your required dimensions and DPI. All corrections are applied consistently across the full catalog batch." },
@@ -358,9 +358,9 @@ export const BF = {
       ],
       whoFor: "Jewelry brands, luxury retailers, fine jewelry photographers, and e-commerce operations where gemstone brilliance, metal accuracy, and microscopic surface detail directly affect perceived value and conversion.",
       pricingTiers: [
-        { tier: "Standard", description: "Colour correction, minor blemishes, basic enhancement",    price: "Contact us" },
-        { tier: "High-end", description: "Full editorial retouch, compositing, detailed skin work",  price: "Contact us" },
-        { tier: "Campaign", description: "Campaign-level work, multiple looks, delivery to spec",    price: "Contact us" },
+        { tier: "Standard", description: "Micro-scratch removal, metalwork clean-up, basic stone enhancement",   price: "Contact us" },
+        { tier: "High-end", description: "Gemstone brilliance, reflection perfection, full metal polish",        price: "Contact us" },
+        { tier: "Campaign", description: "Catalogue-quality finish — compositing, lifestyle backgrounds, spec delivery", price: "Contact us" },
       ],
       faq: [
         { q: "Why does jewelry retouching cost more than standard product retouching?", a: "A single ring can have 30–50 individual facets that each need dodge-and-burn treatment to restore natural brilliance. Metal gradients must be rebuilt from scratch on curved surfaces. The time and precision required are significantly higher than standard product work." },
@@ -471,8 +471,8 @@ export const BF = {
   // About page copy
   about: {
     founders: [
-      { name: "Mohammed Raihan", role: "Co-founder", linkedin: "https://www.linkedin.com/in/mohammed-raihan" },
-      { name: "Tanvir Mahedi",   role: "Co-founder", linkedin: "https://www.linkedin.com/in/tanvir-mahedi" },
+      { name: "Mohammed Raihan", role: "Co-founder", email: "raihan@blackfoxdigital.com.bd", linkedin: "https://www.linkedin.com/in/raihan90" },
+      { name: "Tanvir Mahedi",   role: "Co-founder", email: "shakkhor@blackfoxdigital.com.bd", linkedin: "https://www.linkedin.com/in/shakkhor666/" },
     ],
     story: [
       "BLACKFOX DIGITAL was founded in 2016 by Mohammed Raihan and Tanvir Mahedi in Dhaka, Bangladesh — starting with a team of five graphic designers and a single goal: deliver the kind of image post-production quality that European e-commerce brands couldn't find closer to home.",
