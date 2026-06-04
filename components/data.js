@@ -353,6 +353,28 @@ export const BF = {
     { k: "05", icon: "support",  t: "24/7 Support",      d: "A dedicated support manager available on WhatsApp, Skype and email across every time zone." },
   ],
 
+  founders: [
+    {
+      name: "Mohammed Raihan",
+      role: "Co-founder & Head of Production",
+      schemaId: "https://blackfoxdigital.com.bd/#founder-raihan",
+      bio: "Mohammed Raihan has led BLACKFOX DIGITAL's production since founding in 2016, building the 80+ specialist team.",
+    },
+    {
+      name: "Tanvir Mahedi",
+      role: "Co-founder & Client Relations",
+      schemaId: "https://blackfoxdigital.com.bd/#founder-mahedi",
+      bio: "Tanvir Mahedi oversees client relationships and quality assurance across all European accounts.",
+    },
+  ],
+
+  trustStats: [
+    { value: "80+",   label: "In-house designers" },
+    { value: "2016",  label: "Founded" },
+    { value: "24h",   label: "Standard turnaround" },
+    { value: "9",     label: "Post-production services" },
+  ],
+
   workflow: [
     { k: "01", t: "Secure Upload", d: "Send files via FTP, Dropbox, WeTransfer or Google Drive. We confirm receipt and start within 2 hours." },
     { k: "02", t: "Specialist Edit", d: "A dedicated team edits your images — not generalists. Your brief and brand guidelines drive every decision." },

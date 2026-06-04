@@ -150,6 +150,20 @@ export function Home() {
         </div>
       </section>
 
+      {/* ---------------- TRUST STATS ---------------- */}
+      <section className="sec" style={{ background: "var(--bg-2)", borderBottom: "1px solid var(--line)" }}>
+        <div className="shell">
+          <div className="reveal" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))", gap: "clamp(24px,4vw,48px)", padding: "clamp(40px,5vw,64px) 0" }}>
+            {BF.trustStats.map((s) => (
+              <div key={s.label} style={{ textAlign: "center" }}>
+                <div className="display" style={{ fontSize: "clamp(40px,6vw,72px)", fontWeight: 700, lineHeight: 1 }}>{s.value}</div>
+                <div style={{ marginTop: 8, opacity: 0.6, fontSize: "clamp(13px,1.4vw,15px)", textTransform: "uppercase", letterSpacing: "0.08em" }}>{s.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ---------------- WORKFLOW ---------------- */}
       <section className="sec" id="process" style={{ background: "var(--bg-2)" }}>
         <div className="shell">
