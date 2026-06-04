@@ -22,7 +22,7 @@ export function HeroSlider() {
     { title: "Clipping path",         tag: "Background",    sid: "clipping",  pair: "clip",      fit: "cover",   bg: "#1a1714" },
     { title: "Ghost mannequin",       tag: "Apparel",       sid: "mannequin", pair: "mannequin", fit: "contain", bg: "#f4f3ef" },
     { title: "Product & e-commerce",  tag: "E-commerce",    sid: "ecom",      pair: "ecom",      fit: "cover",   bg: "#1a1714" },
-    { title: "Hair masking",          tag: "Masking",       sid: "masking",   pair: "masking",   fit: "cover",   bg: "#15130f" },
+    { title: "Hair masking",          tag: "Masking",       sid: "masking",   pair: "masking",   fit: "cover",   bg: "#15130f", scale: 1.60 },
   ];
   const total = scenes.length + 1; // + brand slide
 
@@ -94,7 +94,7 @@ export function HeroSlider() {
             <div className={"hslide scene" + (active ? " active" : "")} key={s.title} style={{ background: s.bg }}>
               <div className="scene-ba">
                 {active && (
-                  <BA before={BF.pairs[s.pair].before} after={BF.pairs[s.pair].after} ratio="auto" start={0.5} afterFit={s.fit} afterBg={s.bg} beforeLabel="Raw" afterLabel="Edited" beforeAlt={`${s.title} — raw shot`} afterAlt={`${s.title} — edited result`} priority auto autoDelay={500} style={{ height: "100%", aspectRatio: "auto" }} sizes="100vw" />
+                  <BA before={BF.pairs[s.pair].before} after={BF.pairs[s.pair].after} ratio="auto" start={0.5} afterFit={s.fit} afterBg={s.bg} scale={s.scale} beforeLabel="Raw" afterLabel="Edited" beforeAlt={`${s.title} — raw shot`} afterAlt={`${s.title} — edited result`} priority auto autoDelay={500} style={{ height: "100%", aspectRatio: "auto" }} sizes="100vw" />
                 )}
               </div>
               <div className="scene-overlay"></div>

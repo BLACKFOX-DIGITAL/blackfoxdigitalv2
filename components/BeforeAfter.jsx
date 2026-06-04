@@ -9,7 +9,7 @@ import Image from "next/image";
 export function BeforeAfter({ before, after, ratio = "16 / 10", start = 0.5,
                        beforeLabel = "Before", afterLabel = "After",
                        beforeAlt, afterAlt,
-                       afterFit = "cover", beforeFit,
+                       afterFit = "cover", beforeFit, scale = 1,
                        afterBg = "#f4f3ef", auto = false,
                        autoDelay = 500, priority = false, style,
                        sizes = "100vw" }) {
@@ -128,7 +128,7 @@ export function BeforeAfter({ before, after, ratio = "16 / 10", start = 0.5,
       role="slider"
       aria-valuenow={Math.round(pos * 100)}
       aria-label="Before and after comparison"
-      style={{ aspectRatio: ratio, ...style }}
+      style={{ aspectRatio: ratio, overflow: 'hidden', ...style }}
       onKeyDown={onKey}
       onClickCapture={(e) => {
         if (wasDragged.current) {
@@ -157,7 +157,7 @@ export function BeforeAfter({ before, after, ratio = "16 / 10", start = 0.5,
         src={after}
         alt={afterAlt || afterLabel}
         sizes={sizes}
-        style={{ objectFit: fit, background: afterBg }}
+        style={{ objectFit: fit, background: afterBg, transform: `scale(${scale})` }}
         priority={priority}
         draggable="false"
       />
@@ -168,7 +168,7 @@ export function BeforeAfter({ before, after, ratio = "16 / 10", start = 0.5,
         src={before}
         alt={beforeAlt || beforeLabel}
         sizes={sizes}
-        style={{ objectFit: fit, clipPath: clipBefore }}
+        style={{ objectFit: fit, clipPath: clipBefore, transform: `scale(${scale})` }}
         priority={false}
         draggable="false"
       />
