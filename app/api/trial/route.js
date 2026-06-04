@@ -1,46 +1,56 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
+import { trialConfirmationHtml } from "@/app/emails/trial-confirmation";
 
-const resend = new Resend(process.env.RESEND_API_KEY || "re_dummy_123");
+const resend = new Resend(process.env.RESEND_API_KEY);
+const FROM = process.env.EMAIL_FROM || "BLACKFOX DIGITAL <noreply@blackfoxdigital.com.bd>";
+const INTERNAL = process.env.EMAIL_INTERNAL || "info@blackfoxdigital.com.bd";
 
 export async function POST(req) {
   try {
     const formData = await req.formData();
-    const name = formData.get("name") || "Unknown";
-    const email = formData.get("email") || "No email";
-    
+    const name  = formData.get("name")  || "Unknown";
+    const email = formData.get("email") || "";
+
     const files = formData.getAll("files");
     const attachments = [];
-    
     for (const file of files) {
       if (file && file.name) {
         const bytes = await file.arrayBuffer();
-        const buffer = Buffer.from(bytes);
-        attachments.push({
-          filename: file.name,
-          content: buffer,
-        });
+        attachments.push({ filename: file.name, content: Buffer.from(bytes) });
       }
     }
 
-    const { data, error } = await resend.emails.send({
-      from: "Acme <onboarding@resend.dev>",
-      to: ["info@blackfoxdigital.com.bd"],
-      subject: `New Free Trial Request: ${name}`,
-      html: `
-        <h2>New Free Trial Request</h2>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p>The user has attached ${attachments.length} images for the free trial.</p>
-      `,
-      attachments,
-    });
+    const [internal, confirmation] = await Promise.all([
+      // Internal notification with the attached images
+      resend.emails.send({
+        from: FROM,
+        to: [INTERNAL],
+        subject: `New Free Trial Request: ${name}`,
+        html: `
+          <h2>New Free Trial Request</h2>
+          <p><strong>Name:</strong> ${name}</p>
+          <p><strong>Email:</strong> ${email}</p>
+          <p>${attachments.length} image${attachments.length !== 1 ? "s" : ""} attached for editing.</p>
+        `,
+        attachments,
+      }),
+      // Confirmation to the user
+      email
+        ? resend.emails.send({
+            from: FROM,
+            to: [email],
+            subject: "Your free trial is in our queue — BLACKFOX DIGITAL",
+            html: trialConfirmationHtml({ name, imageCount: attachments.length }),
+          })
+        : Promise.resolve({ data: null, error: null }),
+    ]);
 
-    if (error) {
-      return NextResponse.json({ error }, { status: 400 });
+    if (internal.error) {
+      return NextResponse.json({ error: internal.error }, { status: 400 });
     }
 
-    return NextResponse.json({ success: true, data });
+    return NextResponse.json({ success: true });
   } catch (err) {
     console.error(err);
     return NextResponse.json({ error: "Failed to send email" }, { status: 500 });
