@@ -1,7 +1,7 @@
 import { ServicePage as ServicePageComponent } from "@/components/ServicePage";
 
 export const metadata = {
-  title: "Shadow & Reflection Service | Product Photography Editing — BLACKFOX DIGITAL",
+  title: "Shadow & Reflection Service | BLACKFOX DIGITAL",
   description:
     "Natural, drop and mirror shadows that ground products without a studio reshoot. Fast turnaround, bulk pricing. Free trial available.",
   alternates: { canonical: "https://blackfoxdigital.com.bd/shadow-reflection-services" },

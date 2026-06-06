@@ -1,7 +1,7 @@
 import { Gallery as GalleryComponent } from "@/components/Pages";
 
 export const metadata = {
-  title: "Before & After Gallery | Photo Editing Examples — BLACKFOX DIGITAL",
+  title: "Before & After Gallery | BLACKFOX DIGITAL",
   description:
     "Browse before and after examples of our photo editing work: clipping path, ghost mannequin, masking, retouch, shadow, colour correction and more.",
   alternates: { canonical: "https://blackfoxdigital.com.bd/gallery" },

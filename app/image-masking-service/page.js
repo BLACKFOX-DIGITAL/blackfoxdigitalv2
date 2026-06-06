@@ -1,7 +1,7 @@
 import { ServicePage as ServicePageComponent } from "@/components/ServicePage";
 
 export const metadata = {
-  title: "Image Masking Service — Hair, Fur & Transparency | BLACKFOX DIGITAL",
+  title: "Image Masking Service | BLACKFOX DIGITAL",
   description:
     "Alpha and channel masking for hair, fur, smoke and glass. Strand-level detail retained. Any complexity, any volume. Free trial available.",
   alternates: { canonical: "https://blackfoxdigital.com.bd/image-masking-service" },
