@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://blackfoxdigital.com.bd/sitemap.xml
+
+Disallow: /api/
+Disallow: /_next/
