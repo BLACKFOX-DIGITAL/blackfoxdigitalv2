@@ -1,6 +1,6 @@
 export default function sitemap() {
   const base = 'https://blackfoxdigital.com.bd';
-  const lastModified = new Date();
+  const lastModified = new Date('2026-06-07');
 
   const staticPages = [
     '',
