@@ -3,7 +3,7 @@ import { ServicePage as ServicePageComponent } from "@/components/ServicePage";
 export const metadata = {
   title: "Ghost Mannequin Service | BLACKFOX DIGITAL",
   description:
-    "Hand-composited ghost mannequin editing for apparel brands. Clean 3-D hollow form, neck joints and symmetry correction. 24h turnaround. Free trial.",
+    "Ghost mannequin & invisible mannequin service for apparel. 3-D hollow form, neck joints, symmetry correction. €0.85/image. 24h turnaround. Free trial.",
   alternates: { canonical: "https://blackfoxdigital.com.bd/ghost-mannequin" },
   openGraph: {
     title: "Ghost Mannequin Service | BLACKFOX DIGITAL",

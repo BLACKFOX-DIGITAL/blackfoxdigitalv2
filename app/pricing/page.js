@@ -3,7 +3,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Photo Editing Pricing | From €0.25/Image — BLACKFOX DIGITAL",
   description:
-    "Transparent per-image pricing for clipping path, ghost mannequin, masking and retouch. From €0.25/image. Volume discounts up to 20%. No setup fees.",
+    "Clipping path from €0.25, ghost mannequin from €0.85, model retouch from €3.50/image. Volume discounts up to 20%. No setup fees.",
   alternates: { canonical: "https://blackfoxdigital.com.bd/pricing" },
   openGraph: {
     title: "Photo Editing Pricing | BLACKFOX DIGITAL",
