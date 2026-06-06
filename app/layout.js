@@ -10,74 +10,85 @@ import { RevealWrapper } from "@/components/RevealWrapper";
 
 const orgSchema = {
   "@context": "https://schema.org",
-  "@type": ["Organization", "ProfessionalService"],
-  "@id": "https://blackfoxdigital.com.bd/#organization",
-  name: "BLACKFOX DIGITAL",
-  url: "https://blackfoxdigital.com.bd",
-  logo: {
-    "@type": "ImageObject",
-    url: "https://blackfoxdigital.com.bd/logo-blackfox.webp",
-    width: 828,
-    height: 166,
-  },
-  foundingDate: "2016",
-  description:
-    "Marketplace-ready image post-production services: clipping path, ghost mannequin, image masking, beauty retouch, product retouch and more. 80+ in-house designers.",
-  email: "info@blackfoxdigital.com.bd",
-  telephone: "+8801924482868",
-  numberOfEmployees: { "@type": "QuantitativeValue", minValue: 80 },
-  priceRange: "€€",
-  areaServed: ["United Kingdom", "Germany", "France", "Netherlands", "Italy", "Spain", "Belgium", "Sweden", "Denmark", "Norway"],
-  openingHoursSpecification: {
-    "@type": "OpeningHoursSpecification",
-    dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-    opens: "00:00",
-    closes: "23:59",
-  },
-  contactPoint: {
-    "@type": "ContactPoint",
-    contactType: "customer support",
-    telephone: "+8801924482868",
-    email: "info@blackfoxdigital.com.bd",
-    availableLanguage: "English",
-  },
-  address: {
-    "@type": "PostalAddress",
-    addressCountry: "BD",
-    streetAddress: "House 560, Road 08",
-    addressLocality: "Adabor",
-    addressRegion: "Dhaka",
-    postalCode: "1207",
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: 23.75820,
-    longitude: 90.36271,
-  },
-  hasOfferCatalog: {
-    "@type": "OfferCatalog",
-    name: "Image Post-Production Services",
-    itemListElement: [
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "E-commerce Image Editing", url: "https://blackfoxdigital.com.bd/e-commerce-edit" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Background Removal & Clipping Path", url: "https://blackfoxdigital.com.bd/background-removal-clippingpath-service" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Ghost Mannequin", url: "https://blackfoxdigital.com.bd/ghost-mannequin" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Image Masking", url: "https://blackfoxdigital.com.bd/image-masking-service" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Shadow & Reflection", url: "https://blackfoxdigital.com.bd/shadow-reflection-services" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Beauty & Skin Retouch", url: "https://blackfoxdigital.com.bd/beauty-skin" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Model Retouch", url: "https://blackfoxdigital.com.bd/model-retouch" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Product Retouch", url: "https://blackfoxdigital.com.bd/product-retouch" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Jewelry Retouch", url: "https://blackfoxdigital.com.bd/jewelry-retouch" } },
-    ],
-  },
-  founder: [
-    { "@type": "Person", "@id": "https://blackfoxdigital.com.bd/#founder-raihan", name: "Mohammed Raihan", email: "raihan@blackfoxdigital.com.bd", sameAs: ["https://www.linkedin.com/in/raihan90"] },
-    { "@type": "Person", "@id": "https://blackfoxdigital.com.bd/#founder-mahedi", name: "Tanvir Mahedi",    email: "shakkhor@blackfoxdigital.com.bd", sameAs: ["https://www.linkedin.com/in/shakkhor666/"] },
-  ],
-  sameAs: [
-    "https://www.facebook.com/blackfoxdigital",
-    "https://www.linkedin.com/company/blackfoxdigital",
-    "https://www.youtube.com/@blackfoxdigital",
-  ],
+  "@graph": [
+    {
+      "@type": ["Organization", "ProfessionalService"],
+      "@id": "https://blackfoxdigital.com.bd/#organization",
+      name: "BLACKFOX DIGITAL",
+      url: "https://blackfoxdigital.com.bd",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://blackfoxdigital.com.bd/logo-blackfox.webp",
+        width: 828,
+        height: 166,
+      },
+      foundingDate: "2016",
+      description:
+        "Marketplace-ready image post-production services: clipping path, ghost mannequin, image masking, beauty retouch, product retouch and more. 80+ in-house designers.",
+      email: "info@blackfoxdigital.com.bd",
+      telephone: "+8801924482868",
+      numberOfEmployees: { "@type": "QuantitativeValue", minValue: 80 },
+      priceRange: "€€",
+      areaServed: ["United Kingdom", "Germany", "France", "Netherlands", "Italy", "Spain", "Belgium", "Sweden", "Denmark", "Norway"],
+      openingHoursSpecification: {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        opens: "00:00",
+        closes: "23:59",
+      },
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "customer support",
+        telephone: "+8801924482868",
+        email: "info@blackfoxdigital.com.bd",
+        availableLanguage: "English",
+      },
+      address: {
+        "@type": "PostalAddress",
+        addressCountry: "BD",
+        streetAddress: "House 560, Road 08",
+        addressLocality: "Adabor",
+        addressRegion: "Dhaka",
+        postalCode: "1207",
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 23.75820,
+        longitude: 90.36271,
+      },
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Image Post-Production Services",
+        itemListElement: [
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "E-commerce Image Editing", url: "https://blackfoxdigital.com.bd/e-commerce-edit" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Background Removal & Clipping Path", url: "https://blackfoxdigital.com.bd/background-removal-clippingpath-service" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Ghost Mannequin", url: "https://blackfoxdigital.com.bd/ghost-mannequin" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Image Masking", url: "https://blackfoxdigital.com.bd/image-masking-service" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Shadow & Reflection", url: "https://blackfoxdigital.com.bd/shadow-reflection-services" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Beauty & Skin Retouch", url: "https://blackfoxdigital.com.bd/beauty-skin" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Model Retouch", url: "https://blackfoxdigital.com.bd/model-retouch" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Product Retouch", url: "https://blackfoxdigital.com.bd/product-retouch" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Jewelry Retouch", url: "https://blackfoxdigital.com.bd/jewelry-retouch" } },
+        ],
+      },
+      founder: [
+        { "@type": "Person", "@id": "https://blackfoxdigital.com.bd/#founder-raihan", name: "Mohammed Raihan", email: "raihan@blackfoxdigital.com.bd", sameAs: ["https://www.linkedin.com/in/raihan90"] },
+        { "@type": "Person", "@id": "https://blackfoxdigital.com.bd/#founder-mahedi", name: "Tanvir Mahedi",    email: "shakkhor@blackfoxdigital.com.bd", sameAs: ["https://www.linkedin.com/in/shakkhor666/"] },
+      ],
+      sameAs: [
+        "https://www.facebook.com/blackfoxdigital",
+        "https://www.linkedin.com/company/blackfoxdigital",
+        "https://www.youtube.com/@blackfoxdigital",
+      ],
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://blackfoxdigital.com.bd/#website",
+      url: "https://blackfoxdigital.com.bd",
+      name: "BLACKFOX DIGITAL",
+      publisher: { "@id": "https://blackfoxdigital.com.bd/#organization" }
+    }
+  ]
 };
 
 const saira = Saira_Condensed({
