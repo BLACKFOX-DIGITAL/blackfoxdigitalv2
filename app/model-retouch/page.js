@@ -17,47 +17,19 @@ export const metadata = {
   },
 };
 
-const schemas = [
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    serviceType: "Photo Editing Service",
-    image: "https://blackfoxdigital.com.bd/beauty-skin-retouch-after.webp",
-    name: "Model Retouch",
-    description:
-      "Glamour and high-end retouching for fashion, beauty and campaign work. Skin, hair, body contour and colour grading tuned to your brand standard.",
-    url: "https://blackfoxdigital.com.bd/model-retouch",
-    provider: { "@id": "https://blackfoxdigital.com.bd/#organization" },
-    areaServed: ["United Kingdom", "Germany", "France", "Netherlands", "Italy", "Spain", "Belgium", "Sweden", "Denmark", "Norway"],
-    offers: { "@type": "Offer", url: "https://blackfoxdigital.com.bd/take-free-trial", priceSpecification: { "@type": "UnitPriceSpecification", price: 3.50, priceCurrency: "EUR", unitText: "image" } },
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home",     item: "https://blackfoxdigital.com.bd" },
-      { "@type": "ListItem", position: 2, name: "Services", item: "https://blackfoxdigital.com.bd/image-post-production-service" },
-      { "@type": "ListItem", position: 3, name: "Model Retouch", item: "https://blackfoxdigital.com.bd/model-retouch" },
-    ],
-  },
-];
-
 export default function Page() {
   return (
     <>
-      {schemas.map((s, i) => (
-        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />
-      ))}
       <ServicePageComponent serviceId="model" />
       <ServiceSchema
         name="Model Retouching Service"
         description="Glamour and editorial model retouching for fashion and campaign work. Skin, hair, body contour and colour grade. On-brand finish. Free trial."
         url="https://blackfoxdigital.com.bd/model-retouch"
-        priceRange="$2.00 - $8.00/image"
+        priceRange="€3.50+/image"
         faqs={[
           {
             q: "How much does model retouching cost per photo?",
-            a: "Model retouching starts at $2.00 per image for clean-up and skin smoothing, up to $8.00 per image for full high-end editorial retouching including frequency-separation skin work, hair refinement, body contouring and colour grading to brand standard."
+            a: "Model retouching starts at €3.50 per image. Contact us for a quote on full high-end editorial retouching including frequency-separation skin work, hair refinement, body contouring and colour grading to brand standard."
           },
           {
             q: "What is model retouching and what does it cover?",

@@ -17,47 +17,19 @@ export const metadata = {
   },
 };
 
-const schemas = [
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    serviceType: "Photo Editing Service",
-    image: "https://blackfoxdigital.com.bd/ecommerce-jacket-after.webp",
-    name: "E-commerce Image Editing",
-    description:
-      "Marketplace-ready product image editing — cropped, aligned, white background and spec-compliant at scale for Amazon, Shopify and eBay.",
-    url: "https://blackfoxdigital.com.bd/e-commerce-edit",
-    provider: { "@id": "https://blackfoxdigital.com.bd/#organization" },
-    areaServed: ["United Kingdom", "Germany", "France", "Netherlands", "Italy", "Spain", "Belgium", "Sweden", "Denmark", "Norway"],
-    offers: { "@type": "Offer", url: "https://blackfoxdigital.com.bd/take-free-trial", priceSpecification: { "@type": "UnitPriceSpecification", price: 0.35, priceCurrency: "EUR", unitText: "image" } },
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home",     item: "https://blackfoxdigital.com.bd" },
-      { "@type": "ListItem", position: 2, name: "Services", item: "https://blackfoxdigital.com.bd/image-post-production-service" },
-      { "@type": "ListItem", position: 3, name: "E-commerce Image Editing", item: "https://blackfoxdigital.com.bd/e-commerce-edit" },
-    ],
-  },
-];
-
 export default function Page() {
   return (
     <>
-      {schemas.map((s, i) => (
-        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />
-      ))}
       <ServicePageComponent serviceId="ecom" />
       <ServiceSchema
         name="E-Commerce Photo Editing Service"
         description="Amazon, Shopify & eBay-compliant product images. Cropped, aligned, white background. Bulk orders welcome. Free trial available."
         url="https://blackfoxdigital.com.bd/e-commerce-edit"
-        priceRange="$0.35 - $3.00/image"
+        priceRange="€0.35 - €0.85/image"
         faqs={[
           {
             q: "How much does e-commerce photo editing cost per image?",
-            a: "E-commerce photo editing starts at $0.35 per image for basic background removal and alignment, up to $3.00 per image for complex compositing and full marketplace compliance work. Bulk discounts apply for large catalogues."
+            a: "E-commerce photo editing starts at €0.35 per image for basic background removal and alignment, up to €0.85 per image for complex compositing and full marketplace compliance work. Bulk discounts apply for large catalogues."
           },
           {
             q: "What is e-commerce photo editing and what does it include?",

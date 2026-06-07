@@ -17,47 +17,19 @@ export const metadata = {
   },
 };
 
-const schemas = [
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    serviceType: "Photo Editing Service",
-    image: "https://blackfoxdigital.com.bd/ghost-mannequin-hero-after.webp",
-    name: "Ghost Mannequin Service",
-    description:
-      "Invisible-mannequin compositing that gives apparel a clean, 3-D hollow form. Neck joints, symmetry correction and crease removal included.",
-    url: "https://blackfoxdigital.com.bd/ghost-mannequin",
-    provider: { "@id": "https://blackfoxdigital.com.bd/#organization" },
-    areaServed: ["United Kingdom", "Germany", "France", "Netherlands", "Italy", "Spain", "Belgium", "Sweden", "Denmark", "Norway"],
-    offers: { "@type": "Offer", url: "https://blackfoxdigital.com.bd/take-free-trial", priceSpecification: { "@type": "UnitPriceSpecification", price: 0.85, priceCurrency: "EUR", unitText: "image" } },
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home",     item: "https://blackfoxdigital.com.bd" },
-      { "@type": "ListItem", position: 2, name: "Services", item: "https://blackfoxdigital.com.bd/image-post-production-service" },
-      { "@type": "ListItem", position: 3, name: "Ghost Mannequin Service", item: "https://blackfoxdigital.com.bd/ghost-mannequin" },
-    ],
-  },
-];
-
 export default function Page() {
   return (
     <>
-      {schemas.map((s, i) => (
-        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />
-      ))}
       <ServicePageComponent serviceId="mannequin" />
       <ServiceSchema
         name="Ghost Mannequin Service"
         description="Ghost mannequin & invisible mannequin service for apparel. 3-D hollow form, neck joints, symmetry correction. €0.85/image. 24h turnaround. Free trial."
         url="https://blackfoxdigital.com.bd/ghost-mannequin"
-        priceRange="$0.75 - $3.00/image"
+        priceRange="€0.85 - €1.80/image"
         faqs={[
           {
             q: "How much does ghost mannequin service cost per garment?",
-            a: "Ghost mannequin editing starts at $0.75 per image for basic invisible-mannequin compositing and goes up to $3.00 per image for complex multi-part garments requiring neck joint reconstruction and symmetry correction."
+            a: "Ghost mannequin editing starts at €0.85 per image for basic invisible-mannequin compositing and goes up to €1.80 per image for complex multi-part garments requiring neck joint reconstruction and symmetry correction."
           },
           {
             q: "What is ghost mannequin or invisible mannequin photography editing?",

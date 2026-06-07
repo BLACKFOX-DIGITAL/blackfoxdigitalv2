@@ -17,47 +17,19 @@ export const metadata = {
   },
 };
 
-const schemas = [
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    serviceType: "Photo Editing Service",
-    image: "https://blackfoxdigital.com.bd/image-masking-hair-after.webp",
-    name: "Image Masking Service",
-    description:
-      "Alpha and channel masking for hair, fur, smoke and glass subjects. Strand-level detail retained — no lost edges or fringing.",
-    url: "https://blackfoxdigital.com.bd/image-masking-service",
-    provider: { "@id": "https://blackfoxdigital.com.bd/#organization" },
-    areaServed: ["United Kingdom", "Germany", "France", "Netherlands", "Italy", "Spain", "Belgium", "Sweden", "Denmark", "Norway"],
-    offers: { "@type": "Offer", url: "https://blackfoxdigital.com.bd/take-free-trial", priceSpecification: { "@type": "UnitPriceSpecification", price: 0.75, priceCurrency: "EUR", unitText: "image" } },
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home",     item: "https://blackfoxdigital.com.bd" },
-      { "@type": "ListItem", position: 2, name: "Services", item: "https://blackfoxdigital.com.bd/image-post-production-service" },
-      { "@type": "ListItem", position: 3, name: "Image Masking Service", item: "https://blackfoxdigital.com.bd/image-masking-service" },
-    ],
-  },
-];
-
 export default function Page() {
   return (
     <>
-      {schemas.map((s, i) => (
-        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />
-      ))}
       <ServicePageComponent serviceId="masking" />
       <ServiceSchema
         name="Image Masking Service"
         description="Alpha and channel masking for hair, fur, smoke and glass. Strand-level detail retained. Any complexity, any volume. Free trial available."
         url="https://blackfoxdigital.com.bd/image-masking-service"
-        priceRange="$0.49 - $3.00/image"
+        priceRange="€0.75 - €1.20/image"
         faqs={[
           {
             q: "How much does professional image masking service cost?",
-            a: "Image masking starts at $0.49 per image for subjects with well-defined edges, and goes up to $3.00 per image for complex hair, fur, smoke, or translucent glass subjects that require advanced channel or alpha masking."
+            a: "Image masking starts at €0.75 per image for subjects with standard hair or fur, and goes up to €1.20 per image for complex dense fur, glass, smoke, or multiple subjects requiring advanced channel or alpha masking."
           },
           {
             q: "What is image masking and when is it better than a clipping path?",
