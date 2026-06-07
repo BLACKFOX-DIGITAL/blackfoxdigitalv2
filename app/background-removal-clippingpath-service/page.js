@@ -2,7 +2,7 @@ import { ServicePage as ServicePageComponent } from "@/components/ServicePage";
 import ServiceSchema from "@/components/ServiceSchema";
 
 export const metadata = {
-  title: "Background Removal & Clipping Path | BLACKFOX DIGITAL",
+  title: "Background Removal & Clipping Path Service",
   description:
     "Hand-drawn pen-tool clipping paths and background removal. Pixel-perfect cut-outs for any volume. Transparent, white or custom backgrounds. Free trial.",
   alternates: { canonical: "https://blackfoxdigital.com.bd/background-removal-clippingpath-service" },

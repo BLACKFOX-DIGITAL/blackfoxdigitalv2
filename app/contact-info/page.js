@@ -1,7 +1,7 @@
 import { Contact as ContactComponent } from "@/components/Contact";
 
 export const metadata = {
-  title: "Contact BLACKFOX DIGITAL | Photo Editing Enquiries",
+  title: "Contact Us",
   description:
     "Get in touch with BLACKFOX DIGITAL. Studio in Dhaka, Bangladesh. Serving e-commerce brands across Europe. 24/7 support via email, Skype and WhatsApp.",
   alternates: { canonical: "https://blackfoxdigital.com.bd/contact-info" },

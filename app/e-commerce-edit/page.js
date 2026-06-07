@@ -2,7 +2,7 @@ import { ServicePage as ServicePageComponent } from "@/components/ServicePage";
 import ServiceSchema from "@/components/ServiceSchema";
 
 export const metadata = {
-  title: "E-commerce Photo Editing Service | BLACKFOX DIGITAL",
+  title: "E-Commerce Photo Editing Service",
   description:
     "Amazon, Shopify & eBay-compliant product images. Cropped, aligned, white background. Bulk orders welcome. Free trial available.",
   alternates: { canonical: "https://blackfoxdigital.com.bd/e-commerce-edit" },

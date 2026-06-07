@@ -1,7 +1,7 @@
 import { ServicesOverview as ServicesOverviewComponent } from "@/components/Pages";
 
 export const metadata = {
-  title: "Image Post-Production Services | BLACKFOX DIGITAL",
+  title: "Image Post-Production Services",
   description:
     "Professional image editing services: clipping path, ghost mannequin, masking, retouch and more. Hand-crafted quality, bulk pricing, free trial.",
   alternates: { canonical: "https://blackfoxdigital.com.bd/image-post-production-service" },

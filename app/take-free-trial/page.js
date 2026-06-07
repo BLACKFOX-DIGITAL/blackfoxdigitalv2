@@ -1,7 +1,7 @@
 import { TrialPage as TrialPageComponent } from "@/components/Trial";
 
 export const metadata = {
-  title: "Free Trial — Photo Editing | BLACKFOX DIGITAL",
+  title: "Free Photo Editing Trial — 5 Images Free",
   description:
     "Send up to 5 images and receive a professional edit free. No payment, no commitment. Judge our quality before you place a single order.",
   alternates: { canonical: "https://blackfoxdigital.com.bd/take-free-trial" },

@@ -1,7 +1,7 @@
 import { About as AboutComponent } from "@/components/Pages";
 
 export const metadata = {
-  title: "About BLACKFOX DIGITAL | Image Post-Production Since 2016",
+  title: "About Us — Image Post-Production Since 2016",
   description:
     "80+ in-house designers since 2016. Serving e-commerce brands across Europe — UK, Germany, France, the Netherlands and beyond. QC-assured photo editing.",
   alternates: { canonical: "https://blackfoxdigital.com.bd/image-post-production-company-our-company" },

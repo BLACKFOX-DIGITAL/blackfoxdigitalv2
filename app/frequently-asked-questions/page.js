@@ -1,7 +1,7 @@
 import { FAQ as FAQComponent } from "@/components/FAQLegal";
 
 export const metadata = {
-  title: "Photo Editing FAQ | BLACKFOX DIGITAL",
+  title: "Photo Editing FAQ",
   description:
     "Answers to common questions about turnaround times, pricing, bulk orders, marketplace compliance, revisions and the free trial.",
   alternates: { canonical: "https://blackfoxdigital.com.bd/frequently-asked-questions" },

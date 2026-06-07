@@ -2,7 +2,7 @@ import { ServicePage as ServicePageComponent } from "@/components/ServicePage";
 import ServiceSchema from "@/components/ServiceSchema";
 
 export const metadata = {
-  title: "Jewelry Retouching Service | BLACKFOX DIGITAL",
+  title: "Jewelry Retouching Service",
   description:
     "Fine-detail jewelry photo retouching. Sparkle enhancement, dust removal, metal and gemstone clean-up. Accuracy guaranteed. Free trial available.",
   alternates: { canonical: "https://blackfoxdigital.com.bd/jewelry-retouch" },

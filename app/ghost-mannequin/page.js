@@ -2,7 +2,7 @@ import { ServicePage as ServicePageComponent } from "@/components/ServicePage";
 import ServiceSchema from "@/components/ServiceSchema";
 
 export const metadata = {
-  title: "Ghost Mannequin Service | BLACKFOX DIGITAL",
+  title: "Ghost Mannequin & Invisible Mannequin Service",
   description:
     "Ghost mannequin & invisible mannequin service for apparel. 3-D hollow form, neck joints, symmetry correction. €0.85/image. 24h turnaround. Free trial.",
   alternates: { canonical: "https://blackfoxdigital.com.bd/ghost-mannequin" },

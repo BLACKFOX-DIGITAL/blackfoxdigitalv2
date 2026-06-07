@@ -2,7 +2,7 @@ import { ServicePage as ServicePageComponent } from "@/components/ServicePage";
 import ServiceSchema from "@/components/ServiceSchema";
 
 export const metadata = {
-  title: "Image Masking Service | BLACKFOX DIGITAL",
+  title: "Image Masking Service",
   description:
     "Alpha and channel masking for hair, fur, smoke and glass. Strand-level detail retained. Any complexity, any volume. Free trial available.",
   alternates: { canonical: "https://blackfoxdigital.com.bd/image-masking-service" },

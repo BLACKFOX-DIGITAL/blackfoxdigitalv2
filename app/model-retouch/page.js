@@ -2,7 +2,7 @@ import { ServicePage as ServicePageComponent } from "@/components/ServicePage";
 import ServiceSchema from "@/components/ServiceSchema";
 
 export const metadata = {
-  title: "Model Retouching Service | BLACKFOX DIGITAL",
+  title: "Model Retouching Service",
   description:
     "Glamour and editorial model retouching for fashion and campaign work. Skin, hair, body contour and colour grade. On-brand finish. Free trial.",
   alternates: { canonical: "https://blackfoxdigital.com.bd/model-retouch" },
