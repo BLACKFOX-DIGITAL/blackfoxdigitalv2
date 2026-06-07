@@ -18,8 +18,18 @@ export const metadata = {
 };
 
 export default function Page() {
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://blackfoxdigital.com.bd" },
+      { "@type": "ListItem", position: 2, name: "Jewelry Retouching Service", item: "https://blackfoxdigital.com.bd/jewelry-retouch" },
+    ],
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <ServicePageComponent serviceId="jewelry" />
       <ServiceSchema
         name="Jewelry Retouching Service"
