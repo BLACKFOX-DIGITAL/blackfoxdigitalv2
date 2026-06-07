@@ -1,7 +1,29 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://blackfoxdigital.com.bd/sitemap.xml
-
 Disallow: /api/
 Disallow: /_next/
+
+# Allow AI search bots (for citations and AI Overviews)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Block AI training crawlers that don't power user-facing search
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+Sitemap: https://blackfoxdigital.com.bd/sitemap.xml
