@@ -140,7 +140,7 @@ export default function RootLayout({ children }) {
         <Footer />
         <RevealWrapper />
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-REPLACE_ME_BFD"
+          src="https://www.googletagmanager.com/gtag/js?id=G-3YMETS0L6T"
           strategy="afterInteractive"
         />
         <Script id="ga4-bfd" strategy="afterInteractive">
@@ -148,7 +148,7 @@ export default function RootLayout({ children }) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-REPLACE_ME_BFD');
+            gtag('config', 'G-3YMETS0L6T');
           `}
         </Script>
       </body>
