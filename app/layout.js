@@ -124,6 +124,13 @@ export default function RootLayout({ children }) {
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        {/* LCP hero image preload */}
+        <link
+          rel="preload"
+          as="image"
+          href="/hero-beauty-after.png"
+          fetchPriority="high"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
