@@ -2,11 +2,10 @@ import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import { trialConfirmationHtml } from "@/app/emails/trial-confirmation";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-const FROM = process.env.EMAIL_FROM || "BLACKFOX DIGITAL <noreply@blackfoxdigital.com.bd>";
-const INTERNAL = process.env.EMAIL_INTERNAL || "info@blackfoxdigital.com.bd";
-
 export async function POST(req) {
+  const resend = new Resend(process.env.RESEND_API_KEY);
+  const FROM = process.env.EMAIL_FROM || "BLACKFOX DIGITAL <noreply@blackfoxdigital.com.bd>";
+  const INTERNAL = process.env.EMAIL_INTERNAL || "info@blackfoxdigital.com.bd";
   try {
     const formData = await req.formData();
     const name  = formData.get("name")  || "Unknown";
