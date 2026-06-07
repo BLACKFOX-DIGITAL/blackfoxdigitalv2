@@ -1,7 +1,9 @@
 import { Home as HomeComponent } from "@/components/Home";
 
 export const metadata = {
-  title: "BLACKFOX DIGITAL | Image Post-Production Services",
+  title: {
+    absolute: "BLACKFOX DIGITAL | Image Post-Production Services",
+  },
   description:
     "Marketplace-ready photo editing at scale. Clipping path, ghost mannequin, retouch and more. 80+ in-house designers. Free trial available.",
   alternates: { canonical: "https://blackfoxdigital.com.bd" },
