@@ -1,4 +1,5 @@
 import { Saira_Condensed, Archivo } from "next/font/google";
+import Script from "next/script";
 import "../styles/styles.css";
 import "../styles/ui.css";
 import "../styles/pages.css";
@@ -138,6 +139,18 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
         <RevealWrapper />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-REPLACE_ME_BFD"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-bfd" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-REPLACE_ME_BFD');
+          `}
+        </Script>
       </body>
     </html>
   );
