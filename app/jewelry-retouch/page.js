@@ -1,4 +1,5 @@
 import { ServicePage as ServicePageComponent } from "@/components/ServicePage";
+import ServiceSchema from "@/components/ServiceSchema";
 
 export const metadata = {
   title: "Jewelry Retouching Service | BLACKFOX DIGITAL",
@@ -48,6 +49,26 @@ export default function Page() {
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />
       ))}
       <ServicePageComponent serviceId="jewelry" />
+      <ServiceSchema
+        name="Jewelry Retouching Service"
+        description="Fine-detail jewelry photo retouching. Sparkle enhancement, dust removal, metal and gemstone clean-up. Accuracy guaranteed. Free trial available."
+        url="https://blackfoxdigital.com.bd/jewelry-retouch"
+        priceRange="$0.99 - $5.00/image"
+        faqs={[
+          {
+            q: "How much does professional jewelry retouching cost?",
+            a: "Jewelry retouching starts at $0.99 per image for dust removal and basic clean-up, up to $5.00 per image for full sparkle enhancement, gemstone colour accuracy, metal polishing and reflection work on intricate pieces."
+          },
+          {
+            q: "What does jewelry photo retouching include?",
+            a: "Jewelry retouching covers dust and scratch removal, gemstone colour correction and sparkle enhancement, metal surface polishing, reflection clean-up, and background refinement — ensuring every ring, necklace or bracelet looks showroom-perfect."
+          },
+          {
+            q: "How fast is turnaround for jewelry retouching orders?",
+            a: "Standard orders of up to 500 jewelry images are delivered within 24 hours. Complex multi-piece sets with detailed briefs are typically returned within 48 hours, with rush options available."
+          }
+        ]}
+      />
     </>
   );
 }

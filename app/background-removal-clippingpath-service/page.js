@@ -1,4 +1,5 @@
 import { ServicePage as ServicePageComponent } from "@/components/ServicePage";
+import ServiceSchema from "@/components/ServiceSchema";
 
 export const metadata = {
   title: "Background Removal & Clipping Path | BLACKFOX DIGITAL",
@@ -48,6 +49,26 @@ export default function Page() {
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />
       ))}
       <ServicePageComponent serviceId="clipping" />
+      <ServiceSchema
+        name="Background Removal & Clipping Path Service"
+        description="Hand-drawn pen-tool clipping paths and background removal. Pixel-perfect cut-outs for any volume. Transparent, white or custom backgrounds. Free trial."
+        url="https://blackfoxdigital.com.bd/background-removal-clippingpath-service"
+        priceRange="$0.25 - $2.00/image"
+        faqs={[
+          {
+            q: "How much does background removal and clipping path service cost?",
+            a: "Pricing starts at $0.25 per image for simple subjects and goes up to $2.00 per image for complex multi-path work. Volume discounts are available for bulk orders."
+          },
+          {
+            q: "What is a clipping path and when do I need it?",
+            a: "A clipping path is a hand-drawn vector outline (pen tool path) used to isolate a product or subject from its background. You need it when you want a clean transparent, white, or custom replacement background for e-commerce listings, catalogues, or ad creatives."
+          },
+          {
+            q: "How fast is the turnaround for background removal orders?",
+            a: "Standard orders of up to 500 images are delivered within 24 hours. Rush delivery within 6–12 hours is available on request for urgent batches."
+          }
+        ]}
+      />
     </>
   );
 }
