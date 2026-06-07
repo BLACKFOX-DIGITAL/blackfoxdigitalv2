@@ -148,6 +148,7 @@ export function Footer() {
               <div className="foot-h">Studio</div>
               <Link href="/image-post-production-company-our-company">About us</Link>
               <Link href="/image-post-production-service">All services</Link>
+              <a href="https://theblackfoxstudio.com" target="_blank" rel="noopener noreferrer">International Studio →</a>
               <Link href="/pricing">Pricing</Link>
               <Link href="/gallery">Gallery</Link>
               <Link href="/frequently-asked-questions">FAQ</Link>
