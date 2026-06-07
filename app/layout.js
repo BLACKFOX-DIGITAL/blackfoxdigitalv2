@@ -80,6 +80,8 @@ const orgSchema = {
         "https://www.facebook.com/blackfoxdigital",
         "https://www.linkedin.com/company/blackfoxdigital",
         "https://www.youtube.com/@blackfoxdigital",
+        "https://www.crunchbase.com/organization/blackfox-digital",
+        "https://techbehemoths.com/company/blackfox-digital",
         "https://theblackfoxstudio.com",
       ],
     },
