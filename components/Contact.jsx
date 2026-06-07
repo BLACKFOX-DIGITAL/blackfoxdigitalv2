@@ -21,7 +21,7 @@ export function Contact({ service }) {
 
   const set = (k, v) => { setForm((f) => ({ ...f, [k]: v })); setErrs((e) => ({ ...e, [k]: null })); };
   const addFiles = (list) => {
-    const arr = Array.from(list).slice(0, 6).map((f) => f.name);
+    const arr = Array.from(list).slice(0, 6);
     setFiles((prev) => [...prev, ...arr].slice(0, 6));
   };
   const removeFile = (i) => setFiles((prev) => prev.filter((_, n) => n !== i));
@@ -162,7 +162,7 @@ export function Contact({ service }) {
               {files.length > 0 && (
                 <div className="trial-files">
                   {files.map((f, i) => (
-                    <span className="trial-file" key={f + i}>{f}<button type="button" onClick={() => removeFile(i)} aria-label="Remove">×</button></span>
+                    <span className="trial-file" key={f.name + i}>{f.name}<button type="button" onClick={() => removeFile(i)} aria-label="Remove">×</button></span>
                   ))}
                 </div>
               )}

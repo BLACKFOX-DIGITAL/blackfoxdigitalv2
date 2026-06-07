@@ -23,7 +23,7 @@ export function TrialPage({ service }) {
 
   const set = (k, v) => { setForm((f) => ({ ...f, [k]: v })); setErrs((e) => ({ ...e, [k]: null })); };
   const addFiles = (list) => {
-    const arr = Array.from(list).slice(0, 5).map((f) => f.name);
+    const arr = Array.from(list).slice(0, 5);
     setFiles((prev) => [...prev, ...arr].slice(0, 5));
   };
   const removeFile = (i) => setFiles((prev) => prev.filter((_, n) => n !== i));
@@ -177,8 +177,8 @@ export function TrialPage({ service }) {
                 {files.length > 0 && (
                   <div className="trial-files">
                     {files.map((f, i) => (
-                      <span className="trial-file" key={f + i}>
-                        {f}
+                      <span className="trial-file" key={f.name + i}>
+                        {f.name}
                         <button type="button" onClick={() => removeFile(i)} aria-label="Remove">×</button>
                       </span>
                     ))}
