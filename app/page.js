@@ -13,7 +13,7 @@ export const metadata = {
       "Marketplace-ready photo editing at scale. Clipping path, ghost mannequin, retouch and more. 80+ in-house designers. Free trial available.",
     url: "https://blackfoxdigital.com.bd",
     siteName: "BLACKFOX DIGITAL",
-    images: [{ url: "/logo-blackfox.webp" }],
+    images: [{ url: "/hero-beauty-after.png", width: 1200, height: 630, alt: "Professional image post-production service — BLACKFOX DIGITAL" }],
     type: "website",
   },
 };

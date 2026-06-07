@@ -60,7 +60,7 @@ export function HeroSlider() {
           <div className="brand-panel">
             <div className="brand-inner">
               <span className="brand-eyebrow">Back-end office for your image-editing needs</span>
-              <h1 className="display brand-h1">Professional<br/>photo <span className="hl">retouch.</span></h1>
+              <h1 className="display brand-h1">Professional image<br/><span className="hl">post-production</span> service.</h1>
               <p className="brand-lede">The dedicated editing desk for commerce brands, photographers and agencies — delivered at scale and on deadline.</p>
               <div className="brand-cta">
                 <button className="btn btn-onred" onClick={() => go("contact", { trial: true })}>
