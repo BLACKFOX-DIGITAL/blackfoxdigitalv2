@@ -25,11 +25,5 @@ export default function sitemap() {
   return staticPages.map((path) => ({
     url: `${base}${path}`,
     lastModified,
-    changeFrequency: path === '' ? 'weekly' : 'monthly',
-    priority: path === '' ? 1.0
-      : ['/ghost-mannequin', '/beauty-skin', '/jewelry-retouch', '/e-commerce-edit',
-         '/background-removal-clippingpath-service', '/product-retouch', '/model-retouch',
-         '/shadow-reflection-services', '/image-masking-service', '/image-post-production-service'].includes(path) ? 0.8
-      : 0.6,
   }));
 }

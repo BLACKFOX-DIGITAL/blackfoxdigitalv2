@@ -1,28 +1,16 @@
-export default function ServiceSchema({ name, description, url, priceRange, faqs = [] }) {
+export default function ServiceSchema({ name, description, url, priceRange }) {
   const schema = {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Service",
-        "name": name,
-        "description": description,
-        "url": url,
-        "provider": {
-          "@type": "Organization",
-          "@id": "https://blackfoxdigital.com.bd/#organization"
-        },
-        "areaServed": "Worldwide",
-        "priceRange": priceRange,
-      },
-      ...(faqs.length > 0 ? [{
-        "@type": "FAQPage",
-        "mainEntity": faqs.map(({ q, a }) => ({
-          "@type": "Question",
-          "name": q,
-          "acceptedAnswer": { "@type": "Answer", "text": a }
-        }))
-      }] : [])
-    ]
+    "@type": "Service",
+    "name": name,
+    "description": description,
+    "url": url,
+    "provider": {
+      "@type": "Organization",
+      "@id": "https://blackfoxdigital.com.bd/#organization"
+    },
+    "areaServed": "Worldwide",
+    "priceRange": priceRange,
   };
 
   return (
