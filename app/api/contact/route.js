@@ -27,7 +27,7 @@ export async function POST(req) {
       // Internal notification to the team
       resend.emails.send({
         from: FROM,
-        to: [INTERNAL],
+        to: INTERNAL,
         subject: `New Contact Request: ${name}`,
         html: `
           <h2>New Contact Form Submission</h2>

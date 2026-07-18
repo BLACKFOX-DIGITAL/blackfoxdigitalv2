@@ -24,7 +24,7 @@ export async function POST(req) {
       // Internal notification with the attached images
       resend.emails.send({
         from: FROM,
-        to: [INTERNAL],
+        to: INTERNAL,
         subject: `New Free Trial Request: ${name}`,
         html: `
           <h2>New Free Trial Request</h2>
